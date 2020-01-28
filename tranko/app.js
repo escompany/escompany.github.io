@@ -6,6 +6,10 @@ $(function(){
     let header = $("#header");
     let introH;
     let scrollPos = $(window).scrollTop();
+    let nav = $("#nav");
+    let navToggle = $("#navToggle");
+    let span = $("#span")
+
 
 
     $(window).on("scroll load resize",function(){
@@ -32,10 +36,26 @@ $(function(){
        $("#nav a").removeClass("active");
        $this.addClass("active");
 
+       nav.removeClass("show");
+//       navToggle.removeClass("close");
+       span.toggleClass("close");
+
       $("html,body").animate({
           scrollTop: blockOffset +5
       },700);
    });
+
+      $("#navToggle").on("click", function(event){
+        event.preventDefault();
+
+        nav.toggleClass("show");
+    });
+       $("#span").on("click", function(event){
+        event.preventDefault();
+
+        span.toggleClass("close");
+    });
+
 
  $("[data-slider]").slick({
         infinite: true,
@@ -49,9 +69,10 @@ $(function(){
  });
 
 
+
     AOS.init({
   // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  disable: 'mobile', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
   initClassName: 'aos-init', // class applied after initialization
   animatedClassName: 'aos-animate', // class applied on animation
@@ -129,38 +150,13 @@ $('#element').typeIt({
 
 });
 
+$(".mail__img").magnificPopup({
+    type : 'image',
+    removalDelay: 300,
+    mainClass: 'mfp-fade'
+});
 
 
-    $("#myform-1").validate({
-  // правила для полей с именем и паролем
-       rules:{
-
-            login:{
-                required: true, // поле для имени обязательное для заполнения
-                minlength: 2, // в поле для имени должно быть не меньше 4 символов
-                maxlength: 24, // в поле для имени должно быть не больше 16 символов
-            },
-
-            phone:{
-                required: true, // поле для пароля обязательное для заполнения
-            },
-       },
-  // сообщение для поля с именем и пароля, если что-то было не по правилам
-       messages:{
-
-            login:{
-                required: "* Это поле обязательно для заполнения", // сообщение для имени, если поле не заполнено
-                minlength: " * Имя должно иметь минимум 2 символа", // сообщение для имени, если в поле меньше 4 символов
-                maxlength: " * Максимальное число символов для имени - 24", // сообщение для имени, если в поле больше 16 символов
-            },
-
-            phone:{
-                required: " * Это поле обязательно для заполнения", // сообщение для пароля, если поле не заполнено
-            },
-
-       }
-
-    });
 
 });
 

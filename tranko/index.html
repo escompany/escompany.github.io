@@ -5,14 +5,16 @@
     <title>ТРАНКО</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width",initial-scale=1>
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="manifest" href="img/site.webmanifest">
-<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
@@ -22,18 +24,33 @@
 <div class="header" id="header">
      <div class="container">
 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                    <a href="" class="nav__phone">+7 (707) 231-88-00</a>
                    <a href="" class="nav__link" data-scroll="#intro"><img class="header__logo"src="img/logo.png" alt=""></a>
                    <a href="" class="nav__link"data-scroll="#advantage">ПРЕИМУЩЕСТВА </a>
                    <a href="" class="nav__link"data-scroll="#services">УСЛУГИ</a>
                    <a href="" class="nav__link"data-scroll="#park">АВТОПАРК </a>
                    <a href="" class="nav__link"data-scroll="#mode">ТЕМПЕРАТУРНЫЙ <br> РЕЖИМ</a>
-                   <a href="" class="nav__link" data-scroll="#contact" >КОНТАКТЫ </a>
+                    <a href="" class="nav__link" data-scroll="#contact" >КОНТАКТЫ </a>
                 </nav>
+                 <div class="nav__mobile">
+                      <span class="burger__inner">
+                           <a href="" class="nav__link--mobile" data-scroll="#intro"><img class="header__logo"src="img/logo-mobile.png" alt=""></a>
+                      </span>
+                      <span class="burger__inner">
+                           <a href="" class="nav__phone">+7 (707) 231-88-00</a>
+                      </span>
+                        <div class="burger__inner">
+                          <button class="burger" type="button" id="navToggle">
+                              <span class="burger__item" id="span"></span>
+                          </button>
 
+                     </div>
+
+                </div>
     </div>
 </div>
+
 <div class="intro" id="intro">
      <div class="intro__inner">
         <div class="container">
@@ -56,7 +73,10 @@
      </div>
 </div>
 
+
 <!--advantage-->
+
+
 <div class="advantage" id="advantage">
     <div class="container container--advantage">
         <p class="advantage__title" id="element6">НАШИ <br>ПРЕИМУЩЕСТВА</p>
@@ -100,12 +120,16 @@
                     <p class="advantage__subtext adv--last">при пожелании клиента</p>
                 </div>
             </div>
-                <div>
+                <div class="advantage__photo">
              <img class="advantage__img" data-aos="fade-left"data-aos-duration="2000"src="img/advantage-img.png" alt=""></div>
     </div>
 </div>
 
+
+
 <!--services-->
+
+
 
 <div class="services" id="services">
     <div class="container services--container">
@@ -134,7 +158,11 @@
 </div>
 
 
+
+
 <!--.park-->
+
+
 
 <div class="park" id="park">
     <div class="container park--container">
@@ -175,10 +203,14 @@
     </div>
 </div>
 
+
+
 <!--mode-->
 
+
+
 <div class="mode" id="mode">
-    <div class="container">
+    <div class="container container--mode">
         <p class="mode__title" id="element7">СОБЛЮДЕНИЕ <br>ТЕМПЕРАТУРНОГО РЕЖИМА</p>
         <p class="mode__subtitle"data-aos="fade" data-aos-duration="3000" data-aos-delay="1000"> -29С/+27С</p>
         <div class="mode__content">
@@ -202,32 +234,40 @@
     </div>
 </div>
 
+
+
 <!--mail-->
 
+
+
 <div class="mail">
-    <div class="container">
+    <div class="container mail--container">
         <p class="mail__title"data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">БЛАГОДАРСТВЕННЫЕ <br>ПИСЬМА</p>
         <div class="mail__inner"data-aos="fade" data-aos-duration="3000" data-aos-delay="1000">
             <div class="mail__item">
-                <img src="img/mail-1.png" alt="">
+               <a class="mail__img" href="img/pismo-4.png"><img src="img/mail-1.png" alt=""></a>
             </div>
              <div class="mail__item">
-                <img src="img/mail-2.png" alt="">
+                <a class="mail__img" href="img/pismo-3.png"> <img src="img/mail-2.png" alt=""></a>
             </div>
              <div class="mail__item">
-                <img src="img/mail-3.png" alt="">
+                 <a class="mail__img" href="img/pismo-2.png"><img src="img/mail-3.png" alt=""></a>
             </div>
              <div class="mail__item">
-                <img src="img/mail-4.png" alt="">
+                <a class="mail__img" href="img/pismo-1.png"> <img src="img/mail-4.png" alt=""></a>
             </div>
         </div>
     </div>
 </div>
 
+
+
 <!--work-->
 
+
+
 <div class="work">
-    <div class="container">
+    <div class="container work--container">
         <p class="work__title"id="element8">ЭТАПЫ <br> РАБОТЫ </p>
         <div class="work__inner">
                 <div class="work__item"data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
@@ -255,10 +295,14 @@
     </div>
 </div>
 
+
+
 <!--about-->
 
+
+
 <div class="about">
-    <div class="container">
+    <div class="container about--container">
         <p class="about__title"data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">О НАС</p>
         <div class="about__inner">
             <div class="about__item">
@@ -271,7 +315,11 @@
     </div>
 </div>
 
+
+
 <!--contact-->
+
+
 
 <div class="contact" id="contact">
     <div class="container map--container">
@@ -300,26 +348,31 @@
     </div>
 </div>
 
+
+
 <!--bid-->
+
+
 
 <div class="bid">
     <div class="container bid--container">
         <p class="bid__title"data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">ОСТАВЬТЕ ЗАЯВКУ</p>
-        <p class="bid__subtitle"data-aos="fade-left" data-aos-duration="3000" data-aos-delay="100">ОСТАЛИСЬ ВОПРОСЫ? <br>ХОТИТЕ УЗНАТЬ СТОЙМОСТЬ ПЕРЕВОЗКИ?</p>
+        <p class="bid__subtitle"data-aos="fade" data-aos-duration="3000" data-aos-delay="100">ОСТАЛИСЬ ВОПРОСЫ? ХОТИТЕ УЗНАТЬ СТОЙМОСТЬ ПЕРЕВОЗКИ?</p>
         <div class="bid__forma"data-aos="fade" data-aos-duration="3000" data-aos-delay="100">
-           <form id="myform-1" id="forma" action="" method="post">
+           <form id="myform-1" action="" method="post">
                 <p class="form__text1">ИМЯ
-                <input class="myform__input"id="name" type="text" name="login" placeholder="Как Вас зовут?" /></p>
+                <input class="myform__input" type="text" id="name" name="name" placeholder="Как Вас зовут?" required/></p>
                 <p class="form__text2" >ТЕЛЕФОН
-                <input class="myform__input" id="phone"  type="tel" name="phone" placeholder="Ваш номер телефона?"  /></p>
-                <input class="forma__btn" id="submit" type="button" name="exit" value="ЗАКАЗАТЬ ЗВОНОК" onclick="location.href='thankyoupage.html'"  />
-                </form>
+                <input class="myform__input" id="tel" name="tel" type="tel" placeholder="Ваш номер телефона?" required /></p>
+                <input class="forma__btn" type="submit" id="submit" name="exit" value="ЗАКАЗАТЬ ЗВОНОК" onclick="location.href='thankyoupage.html'"  />
+           </form>
         </div>
     </div>
-     <div class="footer"><!-- footer-->
+     <div class="footer">
             <p class="footer__text">© Copyright 2020 ТОО «ТРАНКО» - Все права защищены</p>
         </div>
 </div>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -327,6 +380,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
 <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+<script src="magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="app.js"></script>
 
 
