@@ -6,6 +6,7 @@ body{
     margin:0;
 
 }
+
 p{
     margin:0 0 10px;
 }
@@ -1725,7 +1726,77 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         font-size: 15px;
     }
 
-
+    @media(max-width:375px){
+        .nav__phone{
+            font-size: 13px;
+        }
+        .intro__subtitle{
+            font-size: 20px;
+            width:300px
+        }
+        .intro__suptest{
+            font-size: 15px;
+        }
+        .advantage__title{
+            font-size: 30px;
+        }
+        .advantage__number{
+            font-size: 50px;
+        }
+        .advantage__suptext{
+            font-size: 30px;
+        }
+        .mode__title{
+            font-size: 30px;
+        }
+        .mode{
+            padding-bottom:30px;
+        }
+        .mail__title{
+            font-size: 27px;
+        }
+        .work__title{
+            font-size: 30px;
+        }
+        .contact__title{
+            font-size: 30px;
+        }
+        .map{
+            top:60%;
+            right:8%;
+        }
+        .bid__title{
+            font-size: 30px;
+            width:200px;
+        }
+        .bid__forma{
+            width:350px;
+            height:200px;
+            margin-left:0;
+        }
+        .form__text1{
+            padding:30px 10px 10px 50px;
+            height:50px;
+        }
+        .form__text2{
+            padding:30px 10px 10px 10px;
+        }
+        .myform__input{
+            width:210px;
+        }
+        .forma__btn{
+            margin-top:10px;
+        }
+        .footer{
+            height:70px;
+        }
+        .contact__phone{
+            font-size: 18px;
+        }
+        .contact__phone:before{
+            top:0;
+        }
+    }
 
 
 

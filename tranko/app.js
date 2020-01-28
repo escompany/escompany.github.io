@@ -38,7 +38,7 @@ $(function(){
 
        nav.removeClass("show");
 //       navToggle.removeClass("close");
-       span.toggleClass("close");
+       span.removeClass("close");
 
       $("html,body").animate({
           scrollTop: blockOffset +5
