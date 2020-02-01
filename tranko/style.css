@@ -1020,6 +1020,12 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 /*Slide button*/
 
 /*MEDIA*/
+   @media(max-width:1024px){
+        .slider{
+            width:1020px;
+        }
+    }
+
 @media(max-width:960px){
         /*burger*/
     .nav{
@@ -1034,6 +1040,10 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
     .nav.show{
         display:flex;
+
+    }
+    .burger__item{
+        transition: all .2s linear;
     }
     .burger__item.close{
         transform: rotate(40deg)
@@ -1761,6 +1771,9 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
         .contact__title{
             font-size: 30px;
         }
+        .mode__item img{
+            width:340px;
+        }
         .map{
             top:60%;
             right:8%;
@@ -1799,6 +1812,165 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     }
 
 
+        @media(max-width:360px){
+        .bid__forma{
+            margin-left:-10px;
+        }
+        .bid__subtitle{
+            width:320px;
+            font-size: 17px;
+        }
+    }
+
+
+    @media(max-width:320px){
+        .nav__phone{
+            font-size: 11px;
+        }
+        .burger__inner{
+            padding:5px 5px;
+        }
+        .burger__item{
+            width:40px;
+            height:4px;
+        }
+        .burger__item:before{
+            width:40px;
+            top:-10px;
+        }
+        .burger__item:after{
+            width:40px;
+            bottom:-10px;
+        }
+        .intro__title{
+            padding:120px 0 10px 0;
+        }
+        .intro__title:before{
+            left:-10px;
+            top:120px;
+            height:90px;
+        }
+        .intro__subtitle{
+            width:290px;
+            font-size: 17px;
+        }
+        .intro__suptitle{
+            font-size: 17px;
+            margin-bottom:10px;
+        }
+        .intro__text{
+            padding-left:0;
+        }
+        .intro__suptext{
+            margin:50px 0 0 20px;
+            font-size: 32px;
+        }
+        .intro__subtext{
+            font-size: 27px;
+        }
+        .intro__suptest{
+            font-size: 12px;
+        }
+        .adv--last{
+            font-size: 22px;
+        }
+        .advantage__photo{
+            width:300px;
+        }
+        .advantage__photo img{
+            width:300px;
+        }
+        .mode__title{
+            font-size: 25px;
+        }
+        .mode__subtitle{
+            padding:20px 0 25px 0;
+        }
+        .mode__subtitle{
+            font-size: 20px;
+        }
+        .mode__item{
+            width:300px;
+        }
+        .mode__text{
+            font-size: 16px;
+            width:300px;
+        }
+        .mode__item img{
+            width:300px;
+        }
+        .text--right{
+            width:300px;
+            font-size: 16px;
+        }
+        .text--right:before{
+            height:110px;
+        }
+        .mail__title{
+            font-size: 23px;
+        }
+        .mail__img img{
+            width:115px
+        }
+        .work{
+            padding:90px 0 0 0;
+        }
+        .about__text{
+            width:300px;
+            font-size: 17px;
+        }
+        .about__text:before{
+            margin-left:-10px;
+        }
+        .about__item img{
+            width:300px;
+        }
+        .contact__title{
+            padding:50px 0 50px 30px;
+        }
+        .contact__text{
+            font-size: 20px;
+        }
+        .contact__phone{
+            font-size: 16px;
+        }
+        .map{
+            top:50%;
+            right:2%;
+        }
+        .contact{
+            padding-bottom:50px;
+        }
+        .bid__subtitle{
+            width:300px;
+            margin-left:0;
+            font-size: 17px;
+        }
+        .bid__forma{
+            width:310px;
+            margin-left:-10px;
+        }
+        .form__text1{
+            font-size: 12px;
+            padding:30px 10px 10px 44px;
+        }
+        .form__text2{
+            font-size: 12px;
+        }
+        .myform__input{
+            font-size: 12px;
+            width:190px;
+        }
+        .forma__btn{
+            font-size: 12px;
+        }
+        .footer__text{
+            font-size: 10px;
+        }
+        .footer{
+            height:47px;
+        }
+    }
 
 
 
@@ -1807,4 +1979,3 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
 
 
 
-}
